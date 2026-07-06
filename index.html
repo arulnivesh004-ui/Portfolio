@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- SEO -->
+<title>Nivesh Web Works | Premium Frontend Web Developer — Dindigul, Tamil Nadu</title>
+<meta name="description" content="Nivesh Web Works builds premium, modern and responsive websites for businesses, institutes and startups in Tamil Nadu. Fast delivery, beautiful design, WhatsApp integration.">
+<meta name="keywords" content="web developer dindigul, web developer tamil nadu, frontend developer, website design coimbatore, business website, responsive website, HTML CSS JavaScript">
+<meta name="author" content="Nivesh — Nivesh Web Works">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://niveshwebworks.in/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Nivesh Web Works | Premium Frontend Web Developer">
+<meta property="og:description" content="Building modern, responsive and high-performance websites for businesses and institutes in Tamil Nadu.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://niveshwebworks.in/">
+<meta property="og:image" content="https://niveshwebworks.in/og-image.jpg">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="Nivesh Web Works">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nivesh Web Works | Premium Frontend Web Developer">
+<meta name="twitter:description" content="Building modern, responsive and high-performance websites for businesses in Tamil Nadu.">
+<meta name="twitter:image" content="https://niveshwebworks.in/og-image.jpg">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Nivesh Web Works",
+  "description":"Premium frontend web development for businesses, institutes and startups in Tamil Nadu.",
+  "url":"https://niveshwebworks.in/",
+  "telephone":"+919626153407",
+  "email":"arulnivesh004@gmail.com",
+  "address":{"@type":"PostalAddress","addressLocality":"Dindigul","addressRegion":"Tamil Nadu","addressCountry":"IN"},
+  "priceRange":"₹₹",
+  "openingHours":"Mo-Sa 09:00-20:00"
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500;1,600&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="icon" href="favicon.png">
+
+<style>
+/* =====================================================
+   1. CSS VARIABLES
+===================================================== */
+:root{
+  --bg:#0B0F19;
+  --bg2:#0D1120;
+  --surf:#121826;
+  --surf2:#1A2336;
+  --surf3:#1F2A40;
+  --gold:#D4AF37;
+  --gold-l:#F5D76E;
+  --gold-d:#B8962E;
+  --blue:#4F8CFF;
+  --blue-l:#7AABFF;
+  --text:#F8FAFC;
+  --muted:#94A3B8;
+  --dim:#64748B;
+  --border:rgba(255,255,255,0.07);
+  --border-g:rgba(212,175,55,0.28);
+  --glow-g:rgba(212,175,55,0.14);
+  --glow-b:rgba(79,140,255,0.14);
+  --sh:0 25px 60px rgba(0,0,0,0.55);
+  --sh-g:0 20px 50px rgba(212,175,55,0.18);
+  --r:14px;
+  --r2:22px;
+  --r3:32px;
+  --fh:'Playfair Display',Georgia,serif;
+  --fb:'Manrope',system-ui,sans-serif;
+  --fm:'JetBrains Mono','Courier New',monospace;
+}
+
+/* =====================================================
+   2. RESET & BASE
+===================================================== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--fb);
+  font-size:1rem;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+::selection{background:var(--gold);color:var(--bg);}
+h1,h2,h3{font-family:var(--fh);font-weight:700;line-height:1.1;letter-spacing:-0.02em;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+button{cursor:pointer;font-family:inherit;border:none;background:none;}
+
+/* =====================================================
+   3. SCROLLBAR
+===================================================== */
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-l);}
+
+/* =====================================================
+   4. UTILITIES
+===================================================== */
+.wrap{max-width:1100px;margin:0 auto;padding:0 5vw;}
+.sec{padding:7rem 0;}
+.sec-alt{background:var(--bg2);}
+
+.tag-label{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1rem;
+}
+.tag-label::before{content:'';display:inline-block;width:22px;height:1px;background:var(--gold);}
+.tag-label .ta{font-family:var(--fh);font-size:.95rem;letter-spacing:0;text-transform:none;font-style:italic;}
+
+.sec-title{font-size:clamp(1.9rem,4vw,3rem);color:var(--text);margin-bottom:.9rem;}
+.sec-title em,.glow{
+  font-style:italic;
+  background:linear-gradient(135deg,var(--gold) 20%,var(--gold-l) 60%,var(--blue));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sec-sub{color:var(--muted);font-size:1rem;max-width:52ch;line-height:1.85;margin-bottom:3rem;}
+
+.glass{
+  background:rgba(18,24,38,.65);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--border);
+}
+
+/* Language-based visibility */
+[data-en],[data-ta]{display:none;}
+[data-lang="en"] [data-en]{display:revert;}
+[data-lang="ta"] [data-ta]{display:revert;}
+/* inline spans */
+span[data-en],span[data-ta]{display:inline;}
+[data-lang="en"] span[data-ta]{display:none;}
+[data-lang="ta"] span[data-en]{display:none;}
+
+/* =====================================================
+   5. BUTTONS
+===================================================== */
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.85rem 1.7rem;border-radius:50px;
+  font-family:var(--fb);font-weight:700;font-size:.88rem;
+  transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s ease,background .2s;
+  position:relative;overflow:hidden;white-space:nowrap;
+  border:1px solid transparent;
+}
+.btn::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,255,255,.12);
+  transform:translateX(-110%) skewX(-15deg);transition:transform .4s ease;
+}
+.btn:hover::before{transform:translateX(110%) skewX(-15deg);}
+
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--bg);
+  box-shadow:0 8px 24px rgba(212,175,55,.32);
+}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(212,175,55,.48);}
+
+.btn-ghost{
+  background:transparent;color:var(--text);border-color:var(--border);
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px);box-shadow:0 10px 28px rgba(212,175,55,.14);}
+
+.btn-green{background:#25D366;color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.32);}
+.btn-green:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(37,211,102,.45);}
+
+.btn-sm{padding:.55rem 1.1rem;font-size:.8rem;}
+
+/* =====================================================
+   6. SCROLL PROGRESS
+===================================================== */
+#progress-bar{
+  position:fixed;top:0;left:0;height:3px;width:0;
+  background:linear-gradient(90deg,var(--gold),var(--gold-l),var(--blue));
+  z-index:99999;transition:width .08s linear;
+}
+
+/* =====================================================
+   7. CURSOR GLOW
+===================================================== */
+#cursor-glow{
+  position:fixed;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(212,175,55,.055) 0%,transparent 70%);
+  pointer-events:none;transform:translate(-50%,-50%);z-index:0;
+  transition:opacity .3s;will-change:transform;
+}
+
+/* =====================================================
+   8. LOADER
+===================================================== */
+#loader{
+  position:fixed;inset:0;background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  z-index:100000;transition:opacity .7s ease,visibility .7s ease;
+}
+#loader.hide{opacity:0;visibility:hidden;pointer-events:none;}
+.ld-ring-wrap{position:relative;width:86px;height:86px;display:flex;align-items:center;justify-content:center;margin-bottom:1.4rem;}
+.ld-ring{
+  position:absolute;inset:0;border-radius:50%;
+  border:2px solid transparent;
+  border-top-color:var(--gold);border-right-color:var(--gold-l);
+  animation:spin 1.4s linear infinite;
+}
+.ld-em{
+  width:66px;height:66px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:1.3rem;font-weight:700;color:var(--bg);letter-spacing:-.02em;
+  box-shadow:0 0 36px rgba(212,175,55,.45);
+  animation:ldPulse 1.4s ease-in-out infinite;
+}
+.ld-name{font-family:var(--fh);font-size:1.15rem;color:var(--text);margin-bottom:.25rem;}
+.ld-sub{font-family:var(--fm);font-size:.68rem;color:var(--dim);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.3rem;}
+.ld-bar{width:180px;height:2px;background:var(--surf2);border-radius:10px;overflow:hidden;}
+.ld-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-l));border-radius:10px;animation:ldFill 1.4s ease-in-out forwards;}
+@keyframes spin{to{transform:rotate(360deg);}}
+@keyframes ldPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
+@keyframes ldFill{from{width:0}to{width:100%}}
+
+/* =====================================================
+   9. NAVBAR
+===================================================== */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:1000;
+  transition:background .3s,border-color .3s,box-shadow .3s;
+}
+header.scrolled{
+  background:rgba(11,15,25,.88);
+  backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+  border-bottom:1px solid var(--border);
+  box-shadow:0 8px 32px rgba(0,0,0,.3);
+}
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem 5vw;max-width:1100px;margin:0 auto;
+}
+.logo{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--text);}
+.logo-ic{
+  width:38px;height:38px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  display:flex;align-items:center;justify-content:center;
+  font-size:.68rem;font-weight:800;color:var(--bg);letter-spacing:-.02em;
+  box-shadow:0 5px 18px rgba(212,175,55,.38);flex-shrink:0;
+}
+.logo span{color:var(--gold);}
+
+.nav-links{display:flex;align-items:center;gap:.15rem;}
+.nav-links a{
+  font-size:.84rem;font-weight:500;color:var(--muted);
+  padding:.45rem .75rem;border-radius:50px;transition:all .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--text);background:rgba(255,255,255,.06);}
+
+.nav-acts{display:flex;align-items:center;gap:.55rem;}
+.ico-btn{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.05);border:1px solid var(--border);
+  color:var(--muted);display:flex;align-items:center;justify-content:center;
+  font-size:.78rem;cursor:pointer;transition:all .2s;
+}
+.ico-btn:hover{background:rgba(212,175,55,.1);border-color:var(--border-g);color:var(--gold);}
+
+.burger{display:none;flex-direction:column;gap:4px;padding:8px;cursor:pointer;}
+.burger span{display:block;width:20px;height:2px;background:var(--text);border-radius:2px;transition:all .3s;}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.burger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+@media(max-width:900px){
+  .nav-links{
+    position:fixed;top:0;right:-100%;width:72vw;max-width:310px;height:100vh;
+    background:var(--surf);flex-direction:column;align-items:flex-start;
+    gap:.2rem;padding:5rem 1.8rem 2rem;
+    transition:right .32s cubic-bezier(.4,0,.2,1);
+    border-left:1px solid var(--border);box-shadow:-20px 0 60px rgba(0,0,0,.5);
+  }
+  .nav-links.open{right:0;}
+  .nav-links a{width:100%;padding:.75rem 1rem;font-size:.95rem;border-radius:var(--r);}
+  .burger{display:flex;}
+}
+@media(max-width:480px){
+  nav{padding:.9rem 4.5vw;}
+  .logo-txt{font-size:.92rem;}
+  .logo-ic{width:32px;height:32px;}
+  .nav-acts{gap:.4rem;}
+  .nav-acts > a.btn{display:none;} /* Hire Me button hidden on very small screens — WhatsApp float button + burger menu cover it */
+}
+
+/* =====================================================
+   10. HERO
+===================================================== */
+.hero{
+  min-height:100vh;min-height:100dvh;display:flex;align-items:center;
+  position:relative;overflow:hidden;padding-top:5rem;
+}
+@media(max-height:500px) and (orientation:landscape){
+  .hero{min-height:auto;padding:6rem 0 2.5rem;}
+  .scroll-ind{display:none;}
+}
+/* Grid pattern */
+.hero-grid{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+  background-size:64px 64px;
+}
+/* Blobs */
+.blob{
+  position:absolute;border-radius:50%;filter:blur(90px);
+  opacity:.32;pointer-events:none;
+}
+.b1{width:520px;height:520px;background:radial-gradient(circle,rgba(212,175,55,.45),transparent);top:-12%;left:-8%;animation:bfloat 9s ease-in-out infinite;}
+.b2{width:420px;height:420px;background:radial-gradient(circle,rgba(79,140,255,.3),transparent);top:25%;right:2%;animation:bfloat 7s ease-in-out infinite reverse;animation-delay:-3s;}
+.b3{width:280px;height:280px;background:radial-gradient(circle,rgba(212,175,55,.22),transparent);bottom:8%;left:42%;animation:bfloat 6s ease-in-out infinite;animation-delay:-5s;}
+@keyframes bfloat{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(28px,-18px) scale(1.05);}66%{transform:translate(-18px,14px) scale(.96);}}
+
+.hero-inner{
+  position:relative;z-index:1;width:100%;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+}
+
+/* Hero Content */
+.h-badge{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.38rem 1rem .38rem .55rem;
+  background:rgba(212,175,55,.08);border:1px solid rgba(212,175,55,.2);
+  border-radius:50px;font-size:.78rem;color:var(--gold-l);font-family:var(--fm);
+  margin-bottom:1.4rem;
+}
+.dot{
+  width:8px;height:8px;border-radius:50%;
+  background:#00E87A;box-shadow:0 0 8px #00E87A;
+  animation:dotP 2s ease-in-out infinite;
+}
+@keyframes dotP{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.7;transform:scale(1.35);}}
+
+.h-eyebrow{
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:.7rem;display:flex;align-items:center;gap:.7rem;
+}
+.h-eyebrow::before{content:'';width:28px;height:1px;background:var(--dim);}
+
+.hero h1{
+  font-size:clamp(2.3rem,5.5vw,4.1rem);
+  margin-bottom:1.4rem;color:var(--text);
+}
+.hero h1 em{font-style:italic;}
+
+.hero-desc{color:var(--muted);font-size:1.02rem;line-height:1.85;max-width:44ch;margin-bottom:2.1rem;}
+.hero-desc strong{color:var(--text);font-weight:700;}
+
+.h-cta{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3.2rem;}
+
+.h-stats{display:flex;gap:2.4rem;flex-wrap:wrap;}
+.hst-num{
+  font-family:var(--fh);font-size:1.9rem;font-weight:700;
+  color:var(--gold);line-height:1;margin-bottom:.25rem;display:block;
+}
+.hst-lbl{font-size:.75rem;color:var(--muted);font-family:var(--fm);text-transform:uppercase;letter-spacing:.05em;}
+
+/* Laptop mockup */
+.hero-visual{display:flex;align-items:center;justify-content:center;}
+.laptop-wrap{position:relative;width:100%;max-width:510px;}
+.laptop-outer{
+  background:linear-gradient(145deg,#252b3c,#1a1f2e);
+  border-radius:18px 18px 4px 4px;padding:10px 10px 0;
+  box-shadow:0 40px 80px rgba(0,0,0,.72),0 0 0 1px rgba(255,255,255,.07);
+}
+.laptop-cam{width:8px;height:8px;border-radius:50%;background:#252b3c;border:1px solid rgba(255,255,255,.1);margin:0 auto 7px;}
+.laptop-scr{background:var(--bg2);border-radius:6px;overflow:hidden;aspect-ratio:16/10;position:relative;}
+.mock-bar{
+  background:var(--surf);padding:7px 11px;
+  display:flex;align-items:center;gap:7px;border-bottom:1px solid var(--border);
+}
+.m-dots{display:flex;gap:4px;}
+.md{width:9px;height:9px;border-radius:50%;}
+.md-r{background:#FF5F57;}.md-y{background:#FEBC2E;}.md-g{background:#28C840;}
+.m-url{flex:1;background:var(--surf2);border-radius:50px;padding:3px 10px;font-family:var(--fm);font-size:.58rem;color:var(--dim);}
+.mock-body{
+  flex:1;background:linear-gradient(145deg,#0e1320,#0b0f19);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:1rem;position:relative;min-height:140px;
+}
+.mock-nav2{
+  position:absolute;top:0;left:0;right:0;
+  background:rgba(11,15,25,.85);padding:5px 10px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.m-logo{font-size:.52rem;font-weight:700;color:var(--gold);}
+.m-links{display:flex;gap:5px;}
+.m-link{width:18px;height:3px;background:rgba(255,255,255,.18);border-radius:2px;}
+.mock-content-inner{text-align:center;padding-top:18px;}
+.mc-title{height:11px;width:60%;background:rgba(255,255,255,.5);border-radius:3px;margin:0 auto 7px;}
+.mc-sub{height:7px;width:42%;background:rgba(255,255,255,.22);border-radius:3px;margin:0 auto 11px;}
+.mc-btns{display:flex;gap:6px;justify-content:center;}
+.mc-b1{height:15px;width:48px;border-radius:20px;background:var(--gold);}
+.mc-b2{height:15px;width:48px;border-radius:20px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);}
+.mock-scan{
+  position:absolute;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(212,175,55,.38),transparent);
+  animation:scan 3s linear infinite;pointer-events:none;
+}
+@keyframes scan{from{top:0}to{top:100%}}
+.laptop-base{background:linear-gradient(145deg,#1e2336,#181d2a);height:12px;border-radius:0 0 5px 5px;margin:0 -2px;box-shadow:0 4px 0 rgba(0,0,0,.28);}
+
+/* Floating cards */
+.fc{
+  position:absolute;border-radius:var(--r);padding:11px 15px;
+  box-shadow:var(--sh);
+}
+.fc1{bottom:38px;left:-28px;animation:fc1f 4s ease-in-out infinite;}
+.fc2{top:18px;right:-18px;animation:fc2f 5s ease-in-out infinite;}
+.fc3{bottom:-8px;right:28px;animation:fc3f 4.5s ease-in-out infinite;}
+.fc-lbl{font-size:.62rem;color:var(--muted);font-family:var(--fm);margin-bottom:3px;}
+.fc-val{font-family:var(--fh);font-size:1.15rem;font-weight:700;color:var(--gold);}
+.fc-sub{font-size:.58rem;color:var(--dim);}
+.fc-ico{font-size:1.1rem;margin-bottom:3px;}
+@keyframes fc1f{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+@keyframes fc2f{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
+@keyframes fc3f{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+
+/* Scroll indicator */
+.scroll-ind{
+  position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.35rem;
+  color:var(--dim);font-family:var(--fm);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+  animation:siBounce 2s ease-in-out infinite;
+}
+@keyframes siBounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(6px);}}
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem;padding-top:1.5rem;}
+  .hero-visual,.fc{display:none;}
+  .hero h1{font-size:clamp(2.1rem,8vw,3.4rem);}
+}
+
+/* =====================================================
+   11. ABOUT
+===================================================== */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:start;margin-bottom:4rem;
+}
+.about-text p{color:var(--muted);font-size:.97rem;line-height:1.85;margin-bottom:1.1rem;}
+.about-text p strong{color:var(--text);font-weight:600;}
+.tamil-verse{
+  margin-top:1.8rem;padding:1.4rem;
+  background:rgba(212,175,55,.05);border:1px solid var(--border-g);
+  border-left:3px solid var(--gold);border-radius:0 var(--r) var(--r) 0;
+}
+.tamil-verse p{font-family:var(--fh);font-style:italic;font-size:1.12rem;color:var(--text);margin-bottom:.4rem;}
+.tamil-verse cite{font-family:var(--fm);font-size:.68rem;color:var(--dim);}
+
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.asc{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r);
+  padding:1.7rem 1.4rem;text-align:center;transition:all .3s;
+}
+.asc:hover{border-color:var(--border-g);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.3),var(--sh-g);}
+.asc-num{font-family:var(--fh);font-size:2.4rem;font-weight:700;color:var(--gold);display:block;margin-bottom:.3rem;}
+.asc-lbl{font-size:.82rem;color:var(--muted);}
+
+/* Timeline */
+.tl-wrap{margin-top:1rem;}
+.tl-wrap > h3{font-size:1.45rem;margin-bottom:2rem;color:var(--text);}
+.tl-track{position:relative;padding-left:2.4rem;}
+.tl-track::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--gold),rgba(212,175,55,.08));
+}
+.tl-item{position:relative;margin-bottom:1.8rem;}
+.tl-item::before{
+  content:'';position:absolute;left:-2.4rem;top:.5rem;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 14px rgba(212,175,55,.5);
+  transform:translateX(-6px);
+}
+.tl-yr{
+  display:inline-block;font-family:var(--fm);font-size:.68rem;
+  color:var(--gold);background:rgba(212,175,55,.1);padding:2px 10px;
+  border-radius:50px;margin-bottom:.45rem;
+}
+.tl-title{font-family:var(--fh);font-size:1.08rem;color:var(--text);margin-bottom:.25rem;}
+.tl-desc{font-size:.86rem;color:var(--muted);line-height:1.7;}
+
+@media(max-width:768px){
+  .about-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .about-stats{grid-template-columns:1fr 1fr;}
+}
+
+/* =====================================================
+   12. SKILLS
+===================================================== */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;}
+.sk-card{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r);
+  padding:1.5rem;transition:all .3s;position:relative;overflow:hidden;
+}
+.sk-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--blue));
+  transform:scaleX(0);transform-origin:left;transition:transform .3s;
+}
+.sk-card:hover::before{transform:scaleX(1);}
+.sk-card:hover{border-color:var(--border-g);transform:translateY(-6px);box-shadow:0 22px 44px rgba(0,0,0,.3);}
+.sk-ico{font-size:1.7rem;margin-bottom:.7rem;}
+.sk-name{font-family:var(--fh);font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.25rem;}
+.sk-pct{font-family:var(--fm);font-size:.72rem;color:var(--gold);margin-bottom:.7rem;}
+.sk-bar{width:100%;height:4px;background:rgba(255,255,255,.05);border-radius:10px;overflow:hidden;}
+.sk-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-l));border-radius:10px;width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1);}
+
+@media(max-width:768px){.skills-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.skills-grid{grid-template-columns:1fr;}}
+
+/* =====================================================
+   13. WORK / PORTFOLIO
+===================================================== */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;}
+.proj-card{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r2);
+  overflow:hidden;transition:all .38s cubic-bezier(.4,0,.2,1);
+}
+.proj-card:hover{transform:translateY(-8px);border-color:var(--border-g);box-shadow:0 32px 64px rgba(0,0,0,.5),var(--sh-g);}
+
+.proj-browser{background:var(--surf2);padding:7px;}
+.pb-bar{
+  background:var(--surf3);border-radius:6px;padding:7px 11px;
+  display:flex;align-items:center;gap:7px;margin-bottom:7px;
+}
+.pb-dots{display:flex;gap:4px;}
+.pb-url{flex:1;background:var(--surf);border-radius:50px;padding:3px 10px;font-family:var(--fm);font-size:.56rem;color:var(--dim);}
+.proj-screen{border-radius:4px;overflow:hidden;aspect-ratio:16/9;position:relative;}
+
+/* Mock screens */
+.ms1{height:100%;background:linear-gradient(145deg,#0a0e1a,#111827);display:flex;flex-direction:column;}
+.ms-nav{background:rgba(255,255,255,.03);padding:7px 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.045);}
+.ms-logo-b{width:38px;height:5px;background:var(--gold);border-radius:3px;}
+.ms-links{display:flex;gap:5px;}
+.ms-link{width:16px;height:3px;background:rgba(255,255,255,.14);border-radius:2px;}
+.ms-hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9px;}
+.ms-t{height:11px;width:60%;background:rgba(255,255,255,.48);border-radius:3px;margin:0 auto 7px;}
+.ms-st{height:7px;width:43%;background:rgba(255,255,255,.22);border-radius:3px;margin:0 auto 11px;}
+.ms-btns{display:flex;gap:6px;justify-content:center;}
+.ms-bg{height:14px;width:46px;border-radius:20px;background:var(--gold);}
+.ms-bw{height:14px;width:46px;border-radius:20px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);}
+
+.proj-info{padding:1.4rem;}
+.proj-badges{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:.7rem;}
+.badge{padding:.18rem .65rem;border-radius:50px;font-size:.68rem;font-weight:600;}
+.bg-gold{background:rgba(212,175,55,.14);color:var(--gold);}
+.bg-blue{background:rgba(79,140,255,.14);color:var(--blue-l);}
+.bg-green{background:rgba(0,232,122,.14);color:#00E87A;}
+.bg-red{background:rgba(255,100,100,.14);color:#FF8080;}
+.proj-title{font-family:var(--fh);font-size:1.25rem;color:var(--text);margin-bottom:.45rem;}
+.proj-desc{font-size:.86rem;color:var(--muted);line-height:1.72;margin-bottom:.9rem;}
+.proj-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:1.1rem;}
+.ptag{font-family:var(--fm);font-size:.65rem;color:var(--dim);background:rgba(255,255,255,.04);border:1px solid var(--border);padding:2px 7px;border-radius:4px;}
+.proj-acts{display:flex;gap:.55rem;flex-wrap:wrap;}
+
+@media(max-width:768px){.proj-grid{grid-template-columns:1fr;}}
+
+/* =====================================================
+   14. EXPERIENCE
+===================================================== */
+.exp-tl{position:relative;padding-left:2.8rem;margin-top:.5rem;}
+.exp-tl::before{
+  content:'';position:absolute;left:0;top:0;width:2px;height:100%;
+  background:linear-gradient(to bottom,var(--gold),rgba(212,175,55,.08));
+}
+.exp-item{position:relative;margin-bottom:2.2rem;}
+.exp-item::before{
+  content:'';position:absolute;left:-2.8rem;top:.5rem;
+  width:16px;height:16px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--gold);
+  box-shadow:0 0 0 4px rgba(212,175,55,.1);transform:translateX(-7px);
+}
+.exp-yr{
+  display:inline-block;font-family:var(--fm);font-size:.68rem;
+  color:var(--gold);background:rgba(212,175,55,.08);
+  border:1px solid var(--border-g);padding:3px 12px;border-radius:50px;margin-bottom:.7rem;
+}
+.exp-card{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r);
+  padding:1.7rem;transition:all .3s;
+}
+.exp-card:hover{border-color:var(--border-g);transform:translateX(6px);box-shadow:0 16px 36px rgba(0,0,0,.28);}
+.exp-card h3{font-size:1.15rem;color:var(--text);margin-bottom:.45rem;}
+.exp-card p{color:var(--muted);font-size:.88rem;line-height:1.72;}
+
+/* =====================================================
+   15. SERVICES
+===================================================== */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;}
+.serv-card{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r2);
+  padding:1.9rem 1.7rem;transition:all .38s cubic-bezier(.4,0,.2,1);
+  position:relative;overflow:hidden;display:flex;flex-direction:column;
+}
+.serv-card::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 20%,rgba(212,175,55,.055),transparent 60%);
+  opacity:0;transition:opacity .3s;
+}
+.serv-card:hover::after{opacity:1;}
+.serv-card:hover{border-color:var(--border-g);transform:translateY(-10px);box-shadow:0 32px 64px rgba(0,0,0,.42),var(--sh-g);}
+.serv-ico{
+  width:52px;height:52px;border-radius:var(--r);
+  background:rgba(212,175,55,.1);border:1px solid var(--border-g);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1.3rem;font-size:1.45rem;transition:all .3s;
+}
+.serv-card:hover .serv-ico{background:rgba(212,175,55,.2);box-shadow:0 8px 20px rgba(212,175,55,.2);}
+.serv-title{font-family:var(--fh);font-size:1.1rem;color:var(--text);margin-bottom:.7rem;}
+.serv-desc{font-size:.88rem;color:var(--muted);line-height:1.82;flex:1;margin-bottom:1.1rem;}
+.serv-tag{font-family:var(--fm);font-size:.66rem;color:var(--gold);}
+
+@media(max-width:900px){.serv-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.serv-grid{grid-template-columns:1fr;}}
+
+/* =====================================================
+   16. PROCESS
+===================================================== */
+.proc-steps{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;
+  position:relative;margin-top:1.5rem;
+}
+.proc-steps::before{
+  content:'';position:absolute;top:31px;left:10%;right:10%;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--blue));z-index:0;
+}
+.proc-step{text-align:center;position:relative;z-index:1;}
+.proc-num{
+  width:62px;height:62px;border-radius:50%;
+  background:var(--surf);border:2px solid var(--border-g);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:1.25rem;font-weight:700;color:var(--gold);
+  margin:0 auto 1.1rem;transition:all .3s;box-shadow:0 0 0 4px rgba(212,175,55,.06);
+}
+.proc-step:hover .proc-num{background:var(--gold);color:var(--bg);box-shadow:0 0 0 8px rgba(212,175,55,.1);transform:scale(1.1);}
+.proc-title{font-family:var(--fh);font-size:.9rem;color:var(--text);margin-bottom:.4rem;}
+.proc-desc{font-size:.76rem;color:var(--muted);line-height:1.6;}
+
+@media(max-width:900px){
+  .proc-steps{grid-template-columns:1fr 1fr;gap:1.4rem;}
+  .proc-steps::before{display:none;}
+}
+@media(max-width:480px){.proc-steps{grid-template-columns:1fr;}}
+
+/* =====================================================
+   17. TESTIMONIALS
+===================================================== */
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;}
+.test-grid.solo{grid-template-columns:1fr;max-width:560px;margin:0 auto;}
+.test-grid.solo .test-txt{font-size:.98rem;}
+.test-card{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r2);
+  padding:1.9rem;transition:all .3s;position:relative;
+}
+.test-card::before{
+  content:'"';position:absolute;top:.9rem;right:1.4rem;
+  font-family:var(--fh);font-size:4rem;color:var(--gold);opacity:.2;line-height:1;
+}
+.test-card:hover{border-color:var(--border-g);transform:translateY(-8px);box-shadow:0 28px 55px rgba(0,0,0,.42),var(--sh-g);}
+.test-stars{display:flex;gap:3px;margin-bottom:.9rem;}
+.test-stars span{color:var(--gold);font-size:.88rem;}
+.test-txt{font-size:.88rem;color:var(--muted);line-height:1.82;margin-bottom:1.4rem;font-style:italic;}
+.test-author{display:flex;align-items:center;gap:.75rem;}
+.test-av{
+  width:40px;height:40px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--gold),var(--blue));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:.85rem;font-weight:700;color:#fff;
+}
+.test-name{font-family:var(--fh);font-size:.92rem;color:var(--text);font-weight:600;}
+.test-role{font-size:.72rem;color:var(--muted);font-family:var(--fm);}
+
+@media(max-width:900px){.test-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.test-grid{grid-template-columns:1fr;}}
+
+/* =====================================================
+   18. FAQ
+===================================================== */
+.faq-layout{display:grid;grid-template-columns:1fr 2fr;gap:4.5rem;align-items:start;}
+.faq-aside h2{font-size:1.75rem;margin-bottom:.9rem;color:var(--text);}
+.faq-aside > p{color:var(--muted);font-size:.88rem;line-height:1.82;margin-bottom:1.4rem;}
+.faq-list{display:flex;flex-direction:column;gap:.65rem;}
+.faq-item{
+  border:1px solid var(--border);border-radius:var(--r);overflow:hidden;
+  background:var(--surf);transition:border-color .2s;
+}
+.faq-item.open{border-color:var(--border-g);}
+.faq-question{
+  width:100%;padding:1.15rem 1.4rem;background:none;border:none;
+  color:var(--text);font-size:.92rem;font-weight:600;font-family:var(--fb);
+  text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:.9rem;
+  transition:color .2s;
+}
+.faq-question:hover,.faq-item.open .faq-question{color:var(--gold);}
+.faq-ico{
+  width:22px;height:22px;border-radius:50%;
+  background:rgba(212,175,55,.1);border:1px solid var(--border-g);
+  display:flex;align-items:center;justify-content:center;color:var(--gold);
+  font-size:.9rem;flex-shrink:0;transition:all .3s;
+}
+.faq-item.open .faq-ico{background:var(--gold);color:var(--bg);transform:rotate(45deg);}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1);}
+.faq-answer p{padding:0 1.4rem 1.15rem;color:var(--muted);font-size:.88rem;line-height:1.82;}
+
+@media(max-width:768px){.faq-layout{grid-template-columns:1fr;gap:1.8rem;}}
+
+/* =====================================================
+   19. CONTACT
+===================================================== */
+.cont-layout{display:grid;grid-template-columns:1fr 1.3fr;gap:3.5rem;align-items:start;}
+.cont-info h3{font-size:1.9rem;margin-bottom:.85rem;color:var(--text);}
+.cont-info > p{color:var(--muted);font-size:.92rem;line-height:1.85;margin-bottom:1.8rem;}
+.cont-cards{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.8rem;}
+.cont-card{
+  display:flex;align-items:center;gap:.9rem;padding:.95rem 1.15rem;
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r);
+  transition:all .3s;text-decoration:none;color:var(--text);
+}
+.cont-card:hover{border-color:var(--border-g);transform:translateX(6px);box-shadow:0 14px 32px rgba(0,0,0,.28);}
+.cc-ico{width:40px;height:40px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.05rem;flex-shrink:0;}
+.cc-wa{background:rgba(37,211,102,.14);}
+.cc-mail{background:rgba(79,140,255,.14);}
+.cc-loc{background:rgba(212,175,55,.14);}
+.cc-av{background:rgba(0,232,122,.14);}
+.cc-lbl{font-size:.7rem;color:var(--muted);font-family:var(--fm);margin-bottom:2px;}
+.cc-val{font-size:.9rem;font-weight:600;color:var(--text);}
+
+/* Form */
+.cont-form{
+  background:var(--surf);border:1px solid var(--border);border-radius:var(--r3);padding:2.3rem;
+}
+.cont-form h3{font-size:1.45rem;margin-bottom:.4rem;color:var(--text);}
+.cont-form > p{color:var(--muted);font-size:.85rem;margin-bottom:1.7rem;}
+.fg{margin-bottom:1.1rem;position:relative;}
+.fl{display:block;font-size:.75rem;font-weight:600;color:var(--muted);margin-bottom:.38rem;font-family:var(--fm);}
+.fi,.fta{
+  width:100%;padding:.82rem .95rem;
+  background:var(--surf2);border:1px solid var(--border);border-radius:var(--r);
+  color:var(--text);font-family:var(--fb);font-size:.9rem;transition:all .2s;outline:none;
+}
+.fi::placeholder,.fta::placeholder{color:var(--dim);}
+.fi:focus,.fta:focus{border-color:var(--gold);background:rgba(212,175,55,.03);box-shadow:0 0 0 3px rgba(212,175,55,.08);}
+.fta{resize:vertical;min-height:115px;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+
+@media(max-width:768px){
+  .cont-layout{grid-template-columns:1fr;gap:2.2rem;}
+  .frow{grid-template-columns:1fr;}
+}
+
+/* =====================================================
+   20. FOOTER
+===================================================== */
+footer{
+  background:var(--surf);border-top:1px solid var(--border);padding:4.5rem 5vw 2.2rem;
+}
+.foot-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:2.8rem;
+  max-width:1100px;margin:0 auto;padding-bottom:2.8rem;border-bottom:1px solid var(--border);
+}
+.foot-brand p{color:var(--muted);font-size:.85rem;line-height:1.82;margin-top:.9rem;max-width:26ch;}
+.foot-logo{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--text);}
+.foot-logo-ic{
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--gold-l));
+  display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:800;color:var(--bg);letter-spacing:-.02em;
+}
+.foot-logo span{color:var(--gold);}
+.foot-socials{display:flex;gap:.5rem;margin-top:1.1rem;}
+.soc{
+  width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.8rem;
+  transition:all .2s;text-decoration:none;
+}
+.soc:hover{background:rgba(212,175,55,.1);border-color:var(--border-g);color:var(--gold);transform:translateY(-3px);}
+.foot-col h4{font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--text);margin-bottom:1.1rem;}
+.foot-col ul{display:flex;flex-direction:column;gap:.5rem;}
+.foot-col li{font-size:.84rem;color:var(--muted);}
+.foot-col a{color:var(--muted);transition:all .2s;}
+.foot-col a:hover{color:var(--gold);padding-left:4px;}
+.foot-ci{display:flex;align-items:flex-start;gap:.55rem;font-size:.82rem;color:var(--muted);margin-bottom:.7rem;}
+.foot-bottom{
+  max-width:1100px;margin:1.8rem auto 0;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.9rem;
+  font-size:.8rem;color:var(--dim);
+}
+.foot-bottom strong{color:var(--gold);}
+
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){
+  .foot-grid{grid-template-columns:1fr;}
+  .foot-bottom{flex-direction:column;text-align:center;}
+}
+
+/* =====================================================
+   21. FLOATING BUTTONS
+===================================================== */
+.float-wa{
+  position:fixed;right:1.4rem;bottom:5.2rem;width:50px;height:50px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;color:#fff;
+  font-size:1.35rem;box-shadow:0 8px 24px rgba(37,211,102,.42);z-index:900;text-decoration:none;transition:all .3s;
+}
+.float-wa:hover{transform:scale(1.12) translateY(-3px);box-shadow:0 16px 40px rgba(37,211,102,.52);}
+.back-to-top{
+  position:fixed;right:1.4rem;bottom:1.4rem;width:42px;height:42px;border-radius:50%;
+  background:var(--surf);border:1px solid var(--border-g);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.3);z-index:900;text-decoration:none;transition:all .3s;
+  opacity:0;visibility:hidden;
+}
+.back-to-top.show{opacity:1;visibility:visible;}
+.back-to-top:hover{background:var(--gold);color:var(--bg);transform:translateY(-3px);}
+
+/* =====================================================
+   22. SCROLL REVEAL
+===================================================== */
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .68s ease,transform .68s ease;}
+[data-reveal].in{opacity:1;transform:translateY(0);}
+[data-reveal][data-d="1"]{transition-delay:.1s;}
+[data-reveal][data-d="2"]{transition-delay:.2s;}
+[data-reveal][data-d="3"]{transition-delay:.3s;}
+[data-reveal][data-d="4"]{transition-delay:.4s;}
+[data-reveal][data-d="5"]{transition-delay:.5s;}
+
+/* =====================================================
+   23. ACCESSIBILITY & REDUCED MOTION
+===================================================== */
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px;}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none !important;animation:none !important;}
+  [data-reveal]{opacity:1;transform:none;}
+  html{scroll-behavior:auto;}
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div id="progress-bar"></div>
+<!-- Cursor glow -->
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<!-- ===================== LOADER ===================== -->
+<div id="loader" role="status" aria-label="Loading Nivesh Web Works">
+  <div class="ld-ring-wrap">
+    <div class="ld-ring"></div>
+    <div class="ld-em">AN</div>
+  </div>
+  <p class="ld-name">Nivesh Web Works</p>
+  <p class="ld-sub">Crafting your experience…</p>
+  <div class="ld-bar"><div class="ld-fill"></div></div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header id="site-header">
+  <nav aria-label="Main navigation">
+    <a href="#top" class="logo" aria-label="Nivesh Web Works — Home">
+      <span class="logo-ic" aria-hidden="true">AN</span>
+      <span class="logo-txt">Nivesh <span>Web Works</span></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#top"><span data-en>Home</span><span data-ta>முகப்பு</span></a></li>
+      <li><a href="#about"><span data-en>About</span><span data-ta>அறிமுகம்</span></a></li>
+      <li><a href="#skills"><span data-en>Skills</span><span data-ta>திறன்கள்</span></a></li>
+      <li><a href="#work"><span data-en>Work</span><span data-ta>பணி</span></a></li>
+      <li><a href="#services"><span data-en>Services</span><span data-ta>சேவைகள்</span></a></li>
+      <li><a href="#contact"><span data-en>Contact</span><span data-ta>தொடர்பு</span></a></li>
+    </ul>
+
+    <div class="nav-acts">
+      <button class="ico-btn" id="langBtn" title="Toggle Language" aria-label="Switch language">
+        <span id="langBtnTxt">த</span>
+      </button>
+      <a href="https://wa.me/919626153407" target="_blank" rel="noopener" class="btn btn-gold btn-sm" aria-label="Hire me on WhatsApp">
+        <span data-en>Hire Me</span><span data-ta>வாடகை</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero sec" id="top" aria-label="Hero introduction">
+  <!-- Background -->
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+  <div class="blob b3" aria-hidden="true"></div>
+
+  <div class="wrap hero-inner">
+    <!-- Left: content -->
+    <div class="hero-content">
+      <div class="h-badge">
+        <span class="dot"></span>
+        <span data-en>Available for Freelance Projects</span>
+        <span data-ta>ஃப்ரீலான்ஸ் திட்டங்களுக்கு தயார்</span>
+      </div>
+      <div class="h-eyebrow">
+        <span data-en>Dindigul, Tamil Nadu &nbsp;·&nbsp; வணக்கம்</span>
+        <span data-ta>டிண்டுக்கல், தமிழ்நாடு &nbsp;·&nbsp; வணக்கம்</span>
+      </div>
+      <h1>
+        <span data-en>Crafting <em>Premium</em><br>Digital Experiences<br>That Convert.</span>
+        <span data-ta>வணிகங்களுக்கு<br><em>சிறந்த</em> இணையதளங்கள்<br>உருவாக்குகிறேன்.</span>
+      </h1>
+      <p class="hero-desc">
+        <span data-en>I'm <strong>Nivesh</strong>, a freelance frontend developer crafting fast, modern and conversion-focused websites for institutes, gyms, shops and businesses across Tamil Nadu.</span>
+        <span data-ta>நான் <strong>நிவேஷ்</strong> — தமிழ்நாட்டில் உள்ள நிறுவனங்களுக்கு வேகமான, நவீன இணையதளங்கள் உருவாக்கும் ஃப்ரீலான்ஸ் டெவலப்பர்.</span>
+      </p>
+      <div class="h-cta">
+        <a href="#work" class="btn btn-gold">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <span data-en>View My Work</span><span data-ta>என் பணிகள்</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span data-en>Get In Touch</span><span data-ta>தொடர்பு கொள்</span>
+        </a>
+      </div>
+      <div class="h-stats">
+        <div>
+          <span class="hst-num counter" data-target="5" data-suffix="+">0</span>
+          <span class="hst-lbl"><span data-en>Projects Done</span><span data-ta>திட்டங்கள்</span></span>
+        </div>
+        <div>
+          <span class="hst-num">100%</span>
+          <span class="hst-lbl"><span data-en>Mobile Ready</span><span data-ta>மொபைல் தயார்</span></span>
+        </div>
+        <div>
+          <span class="hst-num counter" data-target="3" data-suffix="+">0</span>
+          <span class="hst-lbl"><span data-en>Happy Clients</span><span data-ta>மகிழ்ந்த வாடிக்கையாளர்கள்</span></span>
+        </div>
+        <div>
+          <span class="hst-num">24/7</span>
+          <span class="hst-lbl"><span data-en>Support</span><span data-ta>ஆதரவு</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Laptop mockup -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="laptop-wrap">
+        <div class="laptop-outer">
+          <div class="laptop-cam"></div>
+          <div class="laptop-scr">
+            <div class="mock-bar">
+              <div class="m-dots">
+                <div class="md md-r"></div>
+                <div class="md md-y"></div>
+                <div class="md md-g"></div>
+              </div>
+              <div class="m-url">logainstitute.in</div>
+            </div>
+            <div class="mock-body">
+              <div class="mock-nav2">
+                <div class="m-logo">Loga Institute</div>
+                <div class="m-links">
+                  <div class="m-link"></div><div class="m-link"></div><div class="m-link"></div>
+                </div>
+              </div>
+              <div class="mock-content-inner">
+                <div class="mc-title"></div>
+                <div class="mc-sub"></div>
+                <div class="mc-btns">
+                  <div class="mc-b1"></div>
+                  <div class="mc-b2"></div>
+                </div>
+              </div>
+              <div class="mock-scan"></div>
+            </div>
+          </div>
+        </div>
+        <div class="laptop-base"></div>
+        <!-- Floating cards -->
+        <div class="fc fc1 glass">
+          <div class="fc-lbl">Projects Done</div>
+          <div class="fc-val">5+</div>
+          <div class="fc-sub">Business Websites</div>
+        </div>
+        <div class="fc fc2 glass">
+          <div class="fc-ico">⚡</div>
+          <div class="fc-lbl">Page Speed</div>
+          <div class="fc-val">95+</div>
+          <div class="fc-sub">Lighthouse Score</div>
+        </div>
+        <div class="fc fc3 glass">
+          <div class="fc-ico">★</div>
+          <div class="fc-lbl">Client Rating</div>
+          <div class="fc-val">5.0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-ind" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    <span><span data-en>Scroll</span><span data-ta>ஸ்க்ரோல்</span></span>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="sec sec-alt" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">அறிமுகம்</span>
+      &nbsp;
+      <span data-en>Who I Am</span><span data-ta>என்னைப் பற்றி</span>
+    </div>
+    <h2 class="sec-title" id="about-h" data-reveal>
+      <span data-en>Tamil heritage meets<br><em>modern web craft</em></span>
+      <span data-ta>தமிழ் பாரம்பரியம் &amp;<br><em>நவீன வலை வடிவமைப்பு</em></span>
+    </h2>
+
+    <div class="about-grid">
+      <div class="about-text" data-reveal>
+        <p data-en>I'm <strong>Nivesh</strong>, a passionate <strong>Frontend Web Developer</strong> from Dindigul, Tamil Nadu. I hold a BA in Tamil Literature from MK University (2026) — a background that brings a unique perspective: the precision of classical language blended with modern design thinking.</p>
+        <p data-ta>நான் <strong>நிவேஷ்</strong>, டிண்டுக்கலில் உள்ள ஒரு <strong>முன்-இறுதி வலை டெவலப்பர்</strong>. MK பல்கலைக்கழகத்தில் தமிழ் இலக்கியத்தில் BA (2026) — இது வடிவமைப்பில் தனித்துவமான கண்ணோட்டம் தருகிறது.</p>
+        <p data-en>My focus is building <strong>responsive, high-performance websites</strong> that go beyond aesthetics — sites that generate enquiries, build trust and drive real business growth for institutes, gyms, shops and local businesses.</p>
+        <p data-en>I specialise in <strong>HTML5, CSS3 and JavaScript</strong>, delivering clean code, smooth animations and mobile-first experiences that leave a lasting impression on every visitor.</p>
+        <div class="tamil-verse" data-en>
+          <p>"யாதும் ஊரே யாவரும் கேளிர்"</p>
+          <cite>— Purananuru · Every land is my homeland, every person my kin.</cite>
+        </div>
+        <div class="tamil-verse" data-ta>
+          <p>"யாதும் ஊரே யாவரும் கேளிர்"</p>
+          <cite>— புறநானூறு · ஒவ்வொரு நாடும் என் நாடு, ஒவ்வொருவரும் என் உறவினர்.</cite>
+        </div>
+      </div>
+
+      <div class="about-stats" data-reveal data-d="2">
+        <div class="asc">
+          <span class="asc-num counter" data-target="5" data-suffix="+">0</span>
+          <span class="asc-lbl"><span data-en>Projects Completed</span><span data-ta>திட்டங்கள் முடிந்தன</span></span>
+        </div>
+        <div class="asc">
+          <span class="asc-num counter" data-target="3" data-suffix="+">0</span>
+          <span class="asc-lbl"><span data-en>Happy Clients</span><span data-ta>மகிழ்ந்த வாடிக்கையாளர்கள்</span></span>
+        </div>
+        <div class="asc">
+          <span class="asc-num">100%</span>
+          <span class="asc-lbl"><span data-en>Responsive Design</span><span data-ta>ரெஸ்பான்சிவ் டிசைன்</span></span>
+        </div>
+        <div class="asc">
+          <span class="asc-num">24/7</span>
+          <span class="asc-lbl"><span data-en>Support Available</span><span data-ta>ஆதரவு கிடைக்கும்</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="tl-wrap" data-reveal>
+      <h3 data-en>My Journey</h3>
+      <h3 data-ta>என் பயணம்</h3>
+      <div class="tl-track">
+        <div class="tl-item">
+          <span class="tl-yr">2026</span>
+          <div class="tl-title" data-en>Started Web Development</div>
+          <div class="tl-title" data-ta>வலை டெவலப்மென்ட் தொடங்கினேன்</div>
+          <div class="tl-desc" data-en>Self-taught HTML, CSS and JavaScript while pursuing my BA Tamil degree. Passion for beautiful interfaces drove every late-night coding session.</div>
+          <div class="tl-desc" data-ta>BA தமிழ் படிக்கும் போதே HTML, CSS மற்றும் JavaScript சுயமாக கற்றேன். அழகான இன்டர்ஃபேஸ்கள் உருவாக்கும் ஆர்வம் தினமும் இரவு கோடிங் செய்ய ஊக்கியது.</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-yr">2026</span>
+          <div class="tl-title" data-en>First Client Projects</div>
+          <div class="tl-title" data-ta>முதல் வாடிக்கையாளர் திட்டங்கள்</div>
+          <div class="tl-desc" data-en>Built the Loga Institute website — gaining real-world experience in client communication, bilingual i18n and premium feature delivery.</div>
+          <div class="tl-desc" data-ta>லோகா இன்ஸ்டிட்யூட் இணையதளத்தை கட்டினேன். வாடிக்கையாளர் தொடர்பு மற்றும் தமிழ்/ஆங்கிலம் i18n அமைப்பில் அனுபவம் பெற்றேன்.</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-yr">2026</span>
+          <div class="tl-title" data-en>BA Tamil Graduate — MK University</div>
+          <div class="tl-title" data-ta>BA தமிழ் பட்டதாரி — MK பல்கலைக்கழகம்</div>
+          <div class="tl-desc" data-en>Graduated with BA Tamil Literature. Classical Sangam poetry sharpened my thinking about structure, clarity and precision — skills I bring directly into web design.</div>
+          <div class="tl-desc" data-ta>BA தமிழ் இலக்கியம் பட்டம் பெற்றேன். சங்க கவிதை படிப்பு என் வடிவமைப்பு சிந்தனையை கூர்மையாக்கியது.</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-yr" style="background:rgba(212,175,55,.18);border:1px solid var(--gold);">2026</span>
+          <div class="tl-title" data-en>Nivesh Web Works — Open for Clients</div>
+          <div class="tl-title" data-ta>நிவேஷ் வெப் வொர்க்ஸ் — வாடிக்கையாளர்களுக்கு திறந்துள்ளது</div>
+          <div class="tl-desc" data-en>Helping businesses across Tamil Nadu build a powerful online presence through premium, responsive and beautifully designed websites.</div>
+          <div class="tl-desc" data-ta>தமிழ்நாட்டில் வணிகங்களுக்கு பிரீமியம் இணையதளங்கள் மூலம் வலுவான ஆன்லைன் இருப்பை உருவாக்க உதவுகிறேன்.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="sec" aria-labelledby="skills-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">திறன்கள்</span>
+      &nbsp;<span data-en>Technical Expertise</span><span data-ta>தொழில்நுட்ப திறன்கள்</span>
+    </div>
+    <h2 class="sec-title" id="skills-h" data-reveal>
+      <span data-en>Tools &amp; <em>Technologies</em></span>
+      <span data-ta>கருவிகள் &amp; <em>தொழில்நுட்பங்கள்</em></span>
+    </h2>
+    <p class="sec-sub" data-reveal>
+      <span data-en>Every website I build uses these technologies for maximum performance, responsiveness and user experience.</span>
+      <span data-ta>நான் கட்டும் ஒவ்வொரு இணையதளமும் இந்த தொழில்நுட்பங்களைக் கொண்டு உருவாக்கப்படுகிறது.</span>
+    </p>
+    <div class="skills-grid">
+      <div class="sk-card" data-reveal>
+        <div class="sk-ico">🌐</div>
+        <div class="sk-name">HTML5</div>
+        <div class="sk-pct">95% Proficiency</div>
+        <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
+      </div>
+      <div class="sk-card" data-reveal data-d="1">
+        <div class="sk-ico">🎨</div>
+        <div class="sk-name">CSS3 &amp; Animations</div>
+        <div class="sk-pct">92% Proficiency</div>
+        <div class="sk-bar"><div class="sk-fill" data-w="92"></div></div>
+      </div>
+      <div class="sk-card" data-reveal data-d="2">
+        <div class="sk-ico">⚡</div>
+        <div class="sk-name">JavaScript (ES6+)</div>
+        <div class="sk-pct">85% Proficiency</div>
+        <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+      </div>
+      <div class="sk-card" data-reveal data-d="1">
+        <div class="sk-ico">📱</div>
+        <div class="sk-name">Responsive Design</div>
+        <div class="sk-pct">98% Proficiency</div>
+        <div class="sk-bar"><div class="sk-fill" data-w="98"></div></div>
+      </div>
+      <div class="sk-card" data-reveal data-d="2">
+        <div class="sk-ico">🎯</div>
+        <div class="sk-name">UI / UX Design</div>
+        <div class="sk-pct">88% Proficiency</div>
+        <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
+      </div>
+      <div class="sk-card" data-reveal data-d="3">
+        <div class="sk-ico">🚀</div>
+        <div class="sk-name">Website Deployment</div>
+        <div class="sk-pct">90% Proficiency</div>
+        <div class="sk-bar"><div class="sk-fill" data-w="90"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WORK ===================== -->
+<section id="work" class="sec sec-alt" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">பணி</span>
+      &nbsp;<span data-en>Featured Projects</span><span data-ta>திட்டங்கள்</span>
+    </div>
+    <h2 class="sec-title" id="work-h" data-reveal>
+      <span data-en>Real Websites, <em>Real Results</em></span>
+      <span data-ta>உண்மையான இணையதளங்கள், <em>உண்மையான முடிவுகள்</em></span>
+    </h2>
+    <p class="sec-sub" data-reveal>
+      <span data-en>Each project is crafted with meticulous attention to design, performance and business impact.</span>
+      <span data-ta>ஒவ்வொரு திட்டமும் வடிவமைப்பு, செயல்திறன் மற்றும் வணிக தாக்கம் ஆகியவற்றில் கவனமாக உருவாக்கப்படுகிறது.</span>
+    </p>
+
+    <div class="proj-grid">
+      <!-- Project 1 -->
+      <div class="proj-card" data-reveal>
+        <div class="proj-browser">
+          <div class="pb-bar">
+            <div class="pb-dots">
+              <div class="md md-r"></div><div class="md md-y"></div><div class="md md-g"></div>
+            </div>
+            <div class="pb-url">logainstitute.in</div>
+          </div>
+          <div class="proj-screen">
+            <div class="ms1">
+              <div class="ms-nav">
+                <div class="ms-logo-b"></div>
+                <div class="ms-links"><div class="ms-link"></div><div class="ms-link"></div><div class="ms-link"></div></div>
+              </div>
+              <div class="ms-hero">
+                <div class="ms-t"></div><div class="ms-st"></div>
+                <div class="ms-btns"><div class="ms-bg"></div><div class="ms-bw"></div></div>
+              </div>
+              <div style="padding:7px;display:grid;grid-template-columns:repeat(3,1fr);gap:4px;">
+                <div style="height:28px;background:rgba(255,255,255,.04);border-radius:4px;border:1px solid rgba(255,255,255,.07);"></div>
+                <div style="height:28px;background:rgba(255,255,255,.04);border-radius:4px;border:1px solid rgba(255,255,255,.07);"></div>
+                <div style="height:28px;background:rgba(255,255,255,.04);border-radius:4px;border:1px solid rgba(255,255,255,.07);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-badges">
+            <span class="badge bg-gold">Education</span>
+            <span class="badge bg-green">Live Project</span>
+          </div>
+          <div class="proj-title">Loga Institute</div>
+          <div class="proj-desc" data-en>Complete website for a skill training centre in Sempatti, Dindigul — bilingual Tamil/English, WhatsApp enquiry, course tabs, faculty section, gallery, Google Maps and admin dashboard.</div>
+          <div class="proj-desc" data-ta>டிண்டுக்கலில் உள்ள லோகா திட்டம் பயிற்சி மையத்திற்கான முழுமையான இணையதளம். தமிழ்/ஆங்கிலம் இரு மொழி, WhatsApp விசாரணை, படிப்பு தாவல்கள் மற்றும் நிர்வாக டாஷ்போர்டு.</div>
+          <div class="proj-tags">
+            <span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">JavaScript</span>
+            <span class="ptag">i18n</span><span class="ptag">WhatsApp API</span>
+          </div>
+          <div class="proj-acts">
+            <a href="#contact" class="btn btn-gold btn-sm"><span data-en>Request Demo</span><span data-ta>டெமோ கேளுங்கள்</span></a>
+            <a href="#contact" class="btn btn-ghost btn-sm"><span data-en>Case Study</span><span data-ta>கேஸ் ஸ்டடி</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card" data-reveal>
+        <div class="proj-browser">
+          <div class="pb-bar">
+            <div class="pb-dots">
+              <div class="md md-r"></div><div class="md md-y"></div><div class="md md-g"></div>
+            </div>
+            <div class="pb-url">niveshwebworks.in</div>
+          </div>
+          <div class="proj-screen">
+            <div style="height:100%;background:linear-gradient(145deg,#0B0F19,#0f1422);display:flex;flex-direction:column;">
+              <div style="padding:6px 10px;background:rgba(255,255,255,.03);display:flex;align-items:center;justify-content:space-between;">
+                <div style="width:32px;height:5px;background:var(--gold);border-radius:3px;"></div>
+                <div style="display:flex;gap:4px;"><div style="width:13px;height:3px;background:rgba(255,255,255,.13);border-radius:2px;"></div><div style="width:13px;height:3px;background:rgba(255,255,255,.13);border-radius:2px;"></div></div>
+              </div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9px;text-align:center;">
+                <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-l));margin:0 auto 7px;"></div>
+                <div style="height:10px;width:54%;background:rgba(212,175,55,.45);border-radius:3px;margin:0 auto 6px;"></div>
+                <div style="height:6px;width:40%;background:rgba(255,255,255,.18);border-radius:3px;margin:0 auto 10px;"></div>
+                <div style="display:flex;gap:5px;justify-content:center;">
+                  <div style="height:14px;width:46px;border-radius:20px;background:linear-gradient(90deg,var(--gold),var(--gold-l));"></div>
+                  <div style="height:14px;width:46px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-badges">
+            <span class="badge bg-gold">Portfolio</span>
+            <span class="badge bg-blue">Premium Design</span>
+          </div>
+          <div class="proj-title">Nivesh Web Works Portfolio</div>
+          <div class="proj-desc" data-en>This very website — a premium portfolio built with glassmorphism, animated gradients, Tamil/English toggle, and a luxury design system inspired by Linear and Vercel.</div>
+          <div class="proj-desc" data-ta>இந்த இணையதளம் — க்ளாஸ்மார்பிசம், அனிமேஷன் க்ரேடியன்ட்ஸ் மற்றும் தமிழ்/ஆங்கிலம் டாகிளுடன் பிரீமியம் போர்ட்ஃபோலியோ.</div>
+          <div class="proj-tags">
+            <span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">JavaScript</span>
+            <span class="ptag">Glassmorphism</span><span class="ptag">i18n</span>
+          </div>
+          <div class="proj-acts">
+            <a href="#top" class="btn btn-gold btn-sm"><span data-en>You're Here ✓</span><span data-ta>இங்கே இருக்கிறீர்கள் ✓</span></a>
+            <a href="#contact" class="btn btn-ghost btn-sm"><span data-en>Get Similar</span><span data-ta>இது போல் வேணுமா</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="sec sec-alt" aria-labelledby="serv-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">சேவைகள்</span>
+      &nbsp;<span data-en>What I Offer</span><span data-ta>என்ன சேவை வழங்குகிறேன்</span>
+    </div>
+    <h2 class="sec-title" id="serv-h" data-reveal>
+      <span data-en>Services Built for <em>Business Growth</em></span>
+      <span data-ta><em>வணிக வளர்ச்சிக்கான</em> சேவைகள்</span>
+    </h2>
+    <p class="sec-sub" data-reveal>
+      <span data-en>End-to-end web solutions designed to help your business attract more customers and build lasting trust online.</span>
+      <span data-ta>உங்கள் வணிகம் அதிக வாடிக்கையாளர்களை ஈர்க்கவும் ஆன்லைனில் நம்பகத்தன்மை கட்டவும் வடிவமைக்கப்பட்ட முழு வலை தீர்வுகள்.</span>
+    </p>
+    <div class="serv-grid">
+      <div class="serv-card" data-reveal>
+        <div class="serv-ico">🌐</div>
+        <div class="serv-title"><span data-en>Business Website</span><span data-ta>வணிக இணையதளம்</span></div>
+        <div class="serv-desc"><span data-en>Professional multi-page websites for businesses, institutes, shops and startups. Built to build trust, showcase services and convert visitors into customers.</span><span data-ta>வணிகங்கள், நிறுவனங்கள், கடைகள் மற்றும் ஸ்டார்டப்களுக்கான தொழில்முறை பல பக்க இணையதளங்கள்.</span></div>
+        <div class="serv-tag">Starting from ₹5,000</div>
+      </div>
+      <div class="serv-card" data-reveal data-d="1">
+        <div class="serv-ico">📱</div>
+        <div class="serv-title"><span data-en>Responsive Design</span><span data-ta>ரெஸ்பான்சிவ் டிசைன்</span></div>
+        <div class="serv-desc"><span data-en>Every website works flawlessly on mobile, tablet and desktop. Mobile-first approach ensuring a perfect user experience across all screen sizes.</span><span data-ta>ஒவ்வொரு இணையதளமும் மொபைல், டேப்லெட் மற்றும் டெஸ்க்டாப்பில் சரியாக செயல்படும்.</span></div>
+        <div class="serv-tag">All Devices Covered</div>
+      </div>
+      <div class="serv-card" data-reveal data-d="2">
+        <div class="serv-ico">⚡</div>
+        <div class="serv-title"><span data-en>Performance Optimization</span><span data-ta>செயல்திறன் மேம்பாடு</span></div>
+        <div class="serv-desc"><span data-en>Fast-loading websites with optimised code, compressed assets and clean architecture. Google-friendly pages that rank better and keep visitors engaged.</span><span data-ta>வேகமாக ஏற்றும் இணையதளங்கள் — மேம்படுத்தப்பட்ட குறியீடு மற்றும் Google-நட்பான பக்கங்கள்.</span></div>
+        <div class="serv-tag">95+ Google Score</div>
+      </div>
+      <div class="serv-card" data-reveal>
+        <div class="serv-ico">💬</div>
+        <div class="serv-title"><span data-en>WhatsApp Integration</span><span data-ta>வாட்ஸ்அப் ஒருங்கிணைப்பு</span></div>
+        <div class="serv-desc"><span data-en>Direct WhatsApp button, floating widget and smart enquiry forms that connect visitors instantly with your business, proven to increase enquiries.</span><span data-ta>நேரடி WhatsApp பட்டன், மிதக்கும் விட்ஜெட் மற்றும் விசாரணை படிவங்கள் — விசாரணைகளை அதிகரிக்கும்.</span></div>
+        <div class="serv-tag">More Enquiries Guaranteed</div>
+      </div>
+      <div class="serv-card" data-reveal data-d="1">
+        <div class="serv-ico">🌍</div>
+        <div class="serv-title"><span data-en>Domain &amp; Hosting Setup</span><span data-ta>டொமைன் &amp; ஹோஸ்டிங்</span></div>
+        <div class="serv-desc"><span data-en>Complete assistance with domain registration (.in, .com), hosting setup, SSL certificate and deployment. Your website live within days, fully configured.</span><span data-ta>டொமைன் பதிவு, ஹோஸ்டிங் அமைப்பு, SSL சான்றிதழ் மற்றும் பயன்படுத்துதலில் முழுமையான உதவி.</span></div>
+        <div class="serv-tag">End-to-End Deployment</div>
+      </div>
+      <div class="serv-card" data-reveal data-d="2">
+        <div class="serv-ico">🛠</div>
+        <div class="serv-title"><span data-en>Maintenance &amp; Support</span><span data-ta>பராமரிப்பு &amp; ஆதரவு</span></div>
+        <div class="serv-desc"><span data-en>Ongoing updates, content changes, bug fixes and 24/7 WhatsApp support to keep your website performing at its best long after delivery.</span><span data-ta>தொடர் புதுப்பிப்புகள், உள்ளடக்க மாற்றங்கள், பிழை திருத்தங்கள் மற்றும் 24/7 WhatsApp ஆதரவு.</span></div>
+        <div class="serv-tag">Lifetime Support Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section id="process" class="sec" aria-labelledby="proc-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">செயல்முறை</span>
+      &nbsp;<span data-en>How I Work</span><span data-ta>நான் எப்படி வேலை செய்கிறேன்</span>
+    </div>
+    <h2 class="sec-title" id="proc-h" data-reveal>
+      <span data-en>From Idea to <em>Live Website</em></span>
+      <span data-ta>யோசனையிலிருந்து <em>லைவ் இணையதளம்</em></span>
+    </h2>
+    <p class="sec-sub" data-reveal>
+      <span data-en>A clear, transparent process designed to deliver your website on time, every time — with zero confusion.</span>
+      <span data-ta>உங்கள் இணையதளத்தை சரியான நேரத்தில் வழங்க வடிவமைக்கப்பட்ட தெளிவான செயல்முறை.</span>
+    </p>
+    <div class="proc-steps">
+      <div class="proc-step" data-reveal>
+        <div class="proc-num">01</div>
+        <div class="proc-title"><span data-en>Discovery</span><span data-ta>ஆராய்வு</span></div>
+        <div class="proc-desc"><span data-en>Understanding your business, goals and audience via a free consultation call.</span><span data-ta>இலவச ஆலோசனையில் உங்கள் வணிகம் மற்றும் இலக்குகளை புரிந்துகொள்கிறேன்.</span></div>
+      </div>
+      <div class="proc-step" data-reveal data-d="1">
+        <div class="proc-num">02</div>
+        <div class="proc-title"><span data-en>Design Plan</span><span data-ta>வடிவமைப்பு திட்டம்</span></div>
+        <div class="proc-desc"><span data-en>Choosing colors, layout and content structure tailored to your brand.</span><span data-ta>உங்கள் பிராண்டிற்கு ஏற்ப வண்ணங்கள் மற்றும் தளவமைப்பு தேர்வு செய்கிறேன்.</span></div>
+      </div>
+      <div class="proc-step" data-reveal data-d="2">
+        <div class="proc-num">03</div>
+        <div class="proc-title"><span data-en>Development</span><span data-ta>உருவாக்கம்</span></div>
+        <div class="proc-desc"><span data-en>Building your website with clean code, animations and responsive layouts.</span><span data-ta>சுத்தமான குறியீடு மற்றும் ரெஸ்பான்சிவ் தளவமைப்புடன் இணையதளத்தை கட்டுகிறேன்.</span></div>
+      </div>
+      <div class="proc-step" data-reveal data-d="3">
+        <div class="proc-num">04</div>
+        <div class="proc-title"><span data-en>Review &amp; Test</span><span data-ta>மதிப்பாய்வு</span></div>
+        <div class="proc-desc"><span data-en>You review every section. Changes made until you're completely satisfied.</span><span data-ta>நீங்கள் திருப்தி அடையும் வரை மாற்றங்கள் செய்யப்படும்.</span></div>
+      </div>
+      <div class="proc-step" data-reveal data-d="4">
+        <div class="proc-num">05</div>
+        <div class="proc-title"><span data-en>Launch &amp; Support</span><span data-ta>வெளியீடு</span></div>
+        <div class="proc-desc"><span data-en>Your website goes live. I handle deployment and provide ongoing support.</span><span data-ta>இணையதளம் நேரலைக்கு வருகிறது. தொடர் ஆதரவை வழங்குகிறேன்.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials" class="sec sec-alt" aria-labelledby="test-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">கருத்துகள்</span>
+      &nbsp;<span data-en>Client Feedback</span><span data-ta>வாடிக்கையாளர் கருத்துகள்</span>
+    </div>
+    <h2 class="sec-title" id="test-h" data-reveal>
+      <span data-en>What Clients <em>Say</em></span>
+      <span data-ta>வாடிக்கையாளர்கள் <em>என்ன சொல்கிறார்கள்</em></span>
+    </h2>
+    <p class="sec-sub" data-reveal>
+      <span data-en>Client satisfaction is the metric I care most about. Every project is delivered with quality, responsiveness and attention to detail.</span>
+      <span data-ta>வாடிக்கையாளர் திருப்தி என்பது நான் மிகவும் கவலைப்படும் அளவீடு. ஒவ்வொரு திட்டமும் தரம் மற்றும் கவனத்துடன் வழங்கப்படுகிறது.</span>
+    </p>
+    <div class="test-grid solo">
+      <div class="test-card" data-reveal>
+        <div class="test-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="test-txt" data-en>"A clean and professional website delivered with excellent attention to detail. The bilingual Tamil/English feature was exactly what we needed — responsive and fast on all devices."</div>
+        <div class="test-txt" data-ta>"விவரங்களில் சிறந்த கவனத்துடன் வழங்கப்பட்ட சுத்தமான மற்றும் தொழில்முறை இணையதளம். தமிழ்/ஆங்கிலம் அம்சம் நாங்கள் விரும்பியது சரியாக இருந்தது."</div>
+        <div class="test-author">
+          <div class="test-av">LI</div>
+          <div>
+            <div class="test-name">Loga Institute</div>
+            <div class="test-role">Skill Training Centre · Sempatti</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq" class="sec" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">கேள்விகள்</span>
+      &nbsp;<span data-en>FAQ</span><span data-ta>அடிக்கடி கேட்கப்படும் கேள்விகள்</span>
+    </div>
+    <div class="faq-layout">
+      <div class="faq-aside" data-reveal>
+        <h2 class="sec-title" id="faq-h" style="font-size:1.75rem;">
+          <span data-en>Got <em>Questions?</em></span>
+          <span data-ta><em>கேள்விகளா?</em></span>
+        </h2>
+        <p data-en>Common questions clients ask before starting a project. Can't find your answer? WhatsApp me directly.</p>
+        <p data-ta>திட்டம் தொடங்குவதற்கு முன் வாடிக்கையாளர்கள் கேட்கும் பொதுவான கேள்விகள். பதில் கிடைக்கவில்லையா? நேரடியாக WhatsApp செய்யுங்கள்.</p>
+        <a href="https://wa.me/919626153407" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:1rem;">
+          💬&nbsp;
+          <span data-en>Ask on WhatsApp</span><span data-ta>WhatsApp-ல் கேளுங்கள்</span>
+        </a>
+      </div>
+      <div class="faq-list" data-reveal data-d="2">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-en>How long does it take to build a website?</span>
+            <span data-ta>ஒரு இணையதளம் கட்ட எவ்வளவு நேரம் ஆகும்?</span>
+            <span class="faq-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-en>Most business websites are completed within 3–7 working days. Complex websites with admin dashboards, bilingual systems or e-commerce features may take 1–2 weeks. Timeline is always agreed before starting.</p>
+            <p data-ta>பெரும்பாலான வணிக இணையதளங்கள் 3–7 வேலை நாட்களில் முடிக்கப்படும். சிக்கலான இணையதளங்கள் 1–2 வாரங்கள் எடுக்கலாம். காலக்கெடு எப்போதும் முன்கூட்டியே ஒப்புக்கொள்ளப்படும்.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-en>Will my website work perfectly on mobile?</span>
+            <span data-ta>என் இணையதளம் மொபைலில் சரியாக வேலை செய்யுமா?</span>
+            <span class="faq-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-en>Absolutely. Every website I build is mobile-first and fully responsive — tested on iPhone, Android, tablets and multiple screen sizes. Mobile performance is never an afterthought.</p>
+            <p data-ta>நிச்சயமாக. நான் உருவாக்கும் ஒவ்வொரு இணையதளமும் மொபைல் முதல் மற்றும் முழுமையாக ரெஸ்பான்சிவ் — iPhone, Android, டேப்லெட்டுகளில் சோதிக்கப்பட்டது.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-en>Can you help with domain registration and hosting?</span>
+            <span data-ta>டொமைன் பதிவு மற்றும் ஹோஸ்டிங்கில் உதவ முடியுமா?</span>
+            <span class="faq-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-en>Yes, completely. I help you choose the right domain (.in or .com), set up reliable hosting, install an SSL certificate and deploy your website. No technical knowledge needed — I handle everything.</p>
+            <p data-ta>ஆமாம். சரியான டொமைன் தேர்வு, நம்பகமான ஹோஸ்டிங் அமைப்பு, SSL சான்றிதழ் நிறுவல் மற்றும் இணையதளத்தை நேரலைக்கு கொண்டு வர உதவுகிறேன். தொழில்நுட்ப அறிவு தேவையில்லை.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-en>Can I update the website content later?</span>
+            <span data-ta>பின்னர் இணையதள உள்ளடக்கத்தை புதுப்பிக்க முடியுமா?</span>
+            <span class="faq-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-en>Yes. I provide ongoing maintenance and can make content updates, add new sections, fix bugs and implement new features whenever you need. WhatsApp me and it's done quickly.</p>
+            <p data-ta>ஆமாம். தொடர் பராமரிப்பு வழங்குகிறேன் மற்றும் உள்ளடக்க புதுப்பிப்புகள், புதிய பிரிவுகள் சேர்த்தல், பிழைகள் சரி செய்தல் ஆகியவை செய்ய முடியும். WhatsApp செய்யுங்கள்.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-en>Do you build websites in Tamil language?</span>
+            <span data-ta>தமிழ் மொழியில் இணையதளங்கள் கட்டுகிறீர்களா?</span>
+            <span class="faq-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-en>Yes — Tamil-language and bilingual Tamil/English websites are a specialty, thanks to my BA Tamil background. I've built complete i18n systems with language toggles for clients like Loga Institute.</p>
+            <p data-ta>ஆமாம் — என் BA தமிழ் பின்னணி காரணமாக தமிழ்/ஆங்கிலம் இரு மொழி இணையதளங்கள் என் சிறப்பு. லோகா இன்ஸ்டிட்யூட்டிற்கு முழுமையான i18n அமைப்பை உருவாக்கியுள்ளேன்.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-en>What is the cost of building a website?</span>
+            <span data-ta>ஒரு இணையதளம் கட்ட என்ன செலவாகும்?</span>
+            <span class="faq-ico" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-en>Cost depends on pages, features required and complexity. A basic business website starts from ₹5,000. WhatsApp me with your requirements for a free, detailed quote with no obligation whatsoever.</p>
+            <p data-ta>செலவு பக்கங்களின் எண்ணிக்கை, தேவையான அம்சங்கள் மற்றும் சிக்கலை பொறுத்தது. அடிப்படை வணிக இணையதளம் ₹5,000 முதல் தொடங்குகிறது. WhatsApp செய்து இலவச மேற்கோள் பெறுங்கள்.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="sec sec-alt" aria-labelledby="cont-h">
+  <div class="wrap">
+    <div class="tag-label">
+      <span class="ta">தொடர்பு</span>
+      &nbsp;<span data-en>Get In Touch</span><span data-ta>தொடர்பு கொள்</span>
+    </div>
+    <h2 class="sec-title" id="cont-h" data-reveal>
+      <span data-en>Let's Build Your <em>Dream Website</em></span>
+      <span data-ta>உங்கள் <em>கனவு இணையதளம்</em> கட்டுவோம்</span>
+    </h2>
+    <div class="cont-layout">
+      <div class="cont-info" data-reveal>
+        <h3 data-en>Let's Talk</h3>
+        <h3 data-ta>பேசுவோம்</h3>
+        <p data-en>Whether you're starting fresh or upgrading your existing website, I'm here to help. Reach out through any channel below — I respond within hours.</p>
+        <p data-ta>புதிதாக தொடங்கிறீர்களா அல்லது தற்போதுள்ளதை மேம்படுத்துகிறீர்களா — சில மணி நேரத்தில் பதில் அளிப்பேன்.</p>
+        <div class="cont-cards">
+          <a href="https://wa.me/919626153407" target="_blank" rel="noopener" class="cont-card">
+            <div class="cc-ico cc-wa">📱</div>
+            <div><div class="cc-lbl">WhatsApp — Fastest Response</div><div class="cc-val">+91 96261 53407</div></div>
+          </a>
+          <a href="mailto:arulnivesh004@gmail.com" class="cont-card">
+            <div class="cc-ico cc-mail">✉️</div>
+            <div><div class="cc-lbl">Email</div><div class="cc-val">arulnivesh004@gmail.com</div></div>
+          </a>
+          <div class="cont-card" style="cursor:default;">
+            <div class="cc-ico cc-loc">📍</div>
+            <div><div class="cc-lbl">Location</div><div class="cc-val"><span data-en>Dindigul, Tamil Nadu, India</span><span data-ta>டிண்டுக்கல், தமிழ்நாடு, இந்தியா</span></div></div>
+          </div>
+          <div class="cont-card" style="cursor:default;border-color:rgba(0,232,122,.18);">
+            <div class="cc-ico cc-av">✅</div>
+            <div>
+              <div class="cc-lbl">Status</div>
+              <div class="cc-val" style="color:#00E87A;">
+                <span data-en>Open for Freelance Projects</span>
+                <span data-ta>ஃப்ரீலான்ஸ் திட்டங்களுக்கு தயார்</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/919626153407?text=Hi%20Nivesh!%20I%20want%20to%20build%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-green">
+          📱&nbsp;
+          <span data-en>Start on WhatsApp Now</span>
+          <span data-ta>இப்போது WhatsApp-ல் தொடங்கு</span>
+        </a>
+      </div>
+
+      <div class="cont-form" data-reveal data-d="2">
+        <h3 data-en>Quick Project Enquiry</h3>
+        <h3 data-ta>விரைவு திட்ட விசாரணை</h3>
+        <p data-en>Fill this out and I'll get back with a free quote within 24 hours.</p>
+        <p data-ta>இதை நிரப்புங்கள், 24 மணி நேரத்தில் இலவச மேற்கோளுடன் பதில் அளிப்பேன்.</p>
+        <div class="frow">
+          <div class="fg">
+            <label class="fl" for="c-name"><span data-en>Your Name</span><span data-ta>உங்கள் பெயர்</span></label>
+            <input type="text" id="c-name" class="fi" placeholder="Eg: Rajesh Kumar" required autocomplete="name">
+          </div>
+          <div class="fg">
+            <label class="fl" for="c-phone"><span data-en>Phone Number</span><span data-ta>தொலைபேசி எண்</span></label>
+            <input type="tel" id="c-phone" class="fi" placeholder="+91 9876543210" autocomplete="tel">
+          </div>
+        </div>
+        <div class="fg">
+          <label class="fl" for="c-email"><span data-en>Email Address</span><span data-ta>மின்னஞ்சல்</span></label>
+          <input type="email" id="c-email" class="fi" placeholder="your@email.com" required autocomplete="email">
+        </div>
+        <div class="fg">
+          <label class="fl" for="c-biz"><span data-en>Business / Project Name</span><span data-ta>வணிக / திட்ட பெயர்</span></label>
+          <input type="text" id="c-biz" class="fi" placeholder="My Business Name">
+        </div>
+        <div class="fg">
+          <label class="fl" for="c-msg"><span data-en>Tell Me About Your Project</span><span data-ta>உங்கள் திட்டத்தைப் பற்றி சொல்லுங்கள்</span></label>
+          <textarea id="c-msg" class="fta" placeholder="What kind of website do you need? Any specific features?"></textarea>
+        </div>
+        <button type="button" class="btn btn-gold" style="width:100%;justify-content:center;" onclick="submitEnquiry()">
+          🚀&nbsp;
+          <span data-en>Send My Enquiry</span>
+          <span data-ta>என் விசாரணை அனுப்பு</span>
+        </button>
+        <p style="text-align:center;font-size:.72rem;color:var(--dim);margin-top:.8rem;">
+          <span data-en>Or reach me directly on <a href="https://wa.me/919626153407" style="color:var(--gold);">WhatsApp ↗</a></span>
+          <span data-ta>அல்லது நேரடியாக <a href="https://wa.me/919626153407" style="color:var(--gold);">WhatsApp ↗</a> ல் தொடர்பு கொள்ளுங்கள்</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="foot-logo">
+        <div class="foot-logo-ic">AN</div>
+        <span>Nivesh <span>Web Works</span></span>
+      </div>
+      <p data-en>Building modern, responsive and high-performance websites for businesses, institutes and startups across Tamil Nadu — with clean design and excellent user experience.</p>
+      <p data-ta>தமிழ்நாட்டில் உள்ள வணிகங்கள், நிறுவனங்கள் மற்றும் ஸ்டார்டப்களுக்கு நவீன, ரெஸ்பான்சிவ் இணையதளங்கள் உருவாக்குகிறேன்.</p>
+      <div class="foot-socials" aria-label="Social links">
+        <a href="https://wa.me/919626153407" target="_blank" rel="noopener" class="soc" aria-label="WhatsApp">📱</a>
+        <a href="mailto:arulnivesh004@gmail.com" class="soc" aria-label="Email">✉️</a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h4 data-en>Quick Links</h4>
+      <h4 data-ta>விரைவு இணைப்புகள்</h4>
+      <ul>
+        <li><a href="#top"><span data-en>Home</span><span data-ta>முகப்பு</span></a></li>
+        <li><a href="#about"><span data-en>About</span><span data-ta>அறிமுகம்</span></a></li>
+        <li><a href="#work"><span data-en>Portfolio</span><span data-ta>பணி</span></a></li>
+        <li><a href="#services"><span data-en>Services</span><span data-ta>சேவைகள்</span></a></li>
+        <li><a href="#faq"><span data-en>FAQ</span><span data-ta>கேள்விகள்</span></a></li>
+        <li><a href="#contact"><span data-en>Contact</span><span data-ta>தொடர்பு</span></a></li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h4 data-en>Services</h4>
+      <h4 data-ta>சேவைகள்</h4>
+      <ul>
+        <li><span data-en>Business Website</span><span data-ta>வணிக இணையதளம்</span></li>
+        <li><span data-en>Portfolio Website</span><span data-ta>போர்ட்ஃபோலியோ</span></li>
+        <li><span data-en>Landing Page</span><span data-ta>லேண்டிங் பேஜ்</span></li>
+        <li><span data-en>Responsive Design</span><span data-ta>ரெஸ்பான்சிவ் டிசைன்</span></li>
+        <li><span data-en>WhatsApp Integration</span><span data-ta>WhatsApp ஒருங்கிணைப்பு</span></li>
+        <li><span data-en>Website Maintenance</span><span data-ta>பராமரிப்பு</span></li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h4 data-en>Contact</h4>
+      <h4 data-ta>தொடர்பு</h4>
+      <div class="foot-ci">
+        <span>📱</span>
+        <a href="https://wa.me/919626153407" style="color:var(--muted);">+91 96261 53407</a>
+      </div>
+      <div class="foot-ci">
+        <span>✉️</span>
+        <a href="mailto:arulnivesh004@gmail.com" style="color:var(--muted);word-break:break-all;">arulnivesh004@gmail.com</a>
+      </div>
+      <div class="foot-ci">
+        <span>📍</span>
+        <span data-en>Dindigul, Tamil Nadu</span>
+        <span data-ta>டிண்டுக்கல், தமிழ்நாடு</span>
+      </div>
+      <div class="foot-ci">
+        <span>🕐</span>
+        <span data-en>Mon–Sat, 9AM–8PM</span>
+        <span data-ta>திங்கள்–சனி, 9–8</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot-bottom">
+    <p>
+      <span data-en>© 2026 Nivesh Web Works. All Rights Reserved.</span>
+      <span data-ta>© 2026 நிவேஷ் வெப் வொர்க்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</span>
+    </p>
+    <p>
+      <span data-en>Designed &amp; Developed by <strong>Nivesh Web Works</strong></span>
+      <span data-ta>வடிவமைக்கப்பட்டது <strong>நிவேஷ் வெப் வொர்க்ஸ்</strong> ஆல்</span>
+    </p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919626153407" class="float-wa" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+  <svg width="23" height="23" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.857L.073 23.927l6.256-1.638A11.947 11.947 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.374l-.36-.213-3.713.972 1.001-3.624-.234-.373A9.82 9.82 0 0 1 2.182 12C2.182 6.571 6.571 2.182 12 2.182S21.818 6.571 21.818 12 17.429 21.818 12 21.818z"/>
+  </svg>
+</a>
+
+<!-- Back to top -->
+<a href="#top" class="back-to-top" id="btt" aria-label="Back to top">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</a>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+'use strict';
+
+/* ---- Loader ---- */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const ld = document.getElementById('loader');
+    if (ld) ld.classList.add('hide');
+  }, 1500);
+});
+
+/* ---- Cursor glow ---- */
+const cg = document.getElementById('cursor-glow');
+document.addEventListener('mousemove', e => {
+  if (cg) { cg.style.left = e.clientX + 'px'; cg.style.top = e.clientY + 'px'; }
+});
+
+/* ---- Scroll progress ---- */
+const pb = document.getElementById('progress-bar');
+function updateProgress() {
+  if (!pb) return;
+  const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+  pb.style.width = Math.min(pct, 100) + '%';
+}
+
+/* ---- Header scroll ---- */
+const hdr = document.getElementById('site-header');
+function updateHeader() {
+  if (hdr) hdr.classList.toggle('scrolled', window.scrollY > 50);
+}
+
+/* ---- Back to top ---- */
+const btt = document.getElementById('btt');
+function updateBtt() {
+  if (btt) btt.classList.toggle('show', window.scrollY > 400);
+}
+
+window.addEventListener('scroll', () => { updateProgress(); updateHeader(); updateBtt(); }, { passive: true });
+
+/* ---- Burger menu ---- */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+if (burger && navLinks) {
+  burger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.addEventListener('click', e => {
+    if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+      navLinks.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+/* ---- Active nav on scroll ---- */
+const allSections = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a');
+const navObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navAs.forEach(a => {
+        const href = a.getAttribute('href');
+        a.classList.toggle('active', href === '#' + e.target.id);
+      });
+    }
+  });
+}, { threshold: 0.35 });
+allSections.forEach(s => navObs.observe(s));
+
+/* ---- Scroll reveal ---- */
+const revEls = document.querySelectorAll('[data-reveal]');
+const revObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); revObs.unobserve(e.target); }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+revEls.forEach(el => revObs.observe(el));
+
+/* ---- Skill bars ---- */
+const skillFills = document.querySelectorAll('.sk-fill');
+const skObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.width = e.target.dataset.w + '%';
+      skObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.2 });
+skillFills.forEach(el => skObs.observe(el));
+
+/* ---- Counter animation ---- */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.dataset.suffix || '';
+  let count = 0;
+  const step = Math.max(1, Math.ceil(target / 45));
+  const t = setInterval(() => {
+    count = Math.min(count + step, target);
+    el.textContent = count + suffix;
+    if (count >= target) clearInterval(t);
+  }, 45);
+}
+const ctrObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { animateCounter(e.target); ctrObs.unobserve(e.target); }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter[data-target]').forEach(el => ctrObs.observe(el));
+
+/* ---- FAQ accordion ---- */
+document.querySelectorAll('.faq-item').forEach(item => {
+  const btn = item.querySelector('.faq-question');
+  const ans = item.querySelector('.faq-answer');
+  const ico = item.querySelector('.faq-ico');
+  btn.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight = null;
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      const ic = i.querySelector('.faq-ico');
+      if (ic) ic.textContent = '+';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      ans.style.maxHeight = ans.scrollHeight + 'px';
+      btn.setAttribute('aria-expanded', 'true');
+      if (ico) ico.textContent = '+';
+    }
+  });
+});
+
+/* ---- Language toggle ---- */
+const langBtn = document.getElementById('langBtn');
+const langTxt = document.getElementById('langBtnTxt');
+const root = document.documentElement;
+let lang = 'en';
+if (langBtn) {
+  langBtn.addEventListener('click', () => {
+    lang = lang === 'en' ? 'ta' : 'en';
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang);
+    langTxt.textContent = lang === 'en' ? 'த' : 'EN';
+    langBtn.title = lang === 'en' ? 'Switch to Tamil' : 'Switch to English';
+  });
+}
+
+/* ---- Hero blob parallax ---- */
+const blobs = document.querySelectorAll('.blob');
+let rafId = null;
+document.addEventListener('mousemove', e => {
+  if (rafId) cancelAnimationFrame(rafId);
+  rafId = requestAnimationFrame(() => {
+    const x = (e.clientX / window.innerWidth - .5) * 18;
+    const y = (e.clientY / window.innerHeight - .5) * 18;
+    blobs.forEach((b, i) => {
+      const f = (i + 1) * .45;
+      b.style.transform = `translate(${x * f}px, ${y * f}px)`;
+    });
+  });
+});
+
+/* ---- Form submit ---- */
+function submitEnquiry() {
+  const name  = (document.getElementById('c-name')?.value  || '').trim();
+  const phone = (document.getElementById('c-phone')?.value || '').trim();
+  const email = (document.getElementById('c-email')?.value || '').trim();
+  const biz   = (document.getElementById('c-biz')?.value   || '').trim();
+  const msg   = (document.getElementById('c-msg')?.value   || '').trim();
+  if (!name || !email) { alert('Please enter your name and email address.'); return; }
+  const wa = encodeURIComponent(
+    `Hi Nivesh! I want to enquire about a website.\n\nName: ${name}\nPhone: ${phone || 'N/A'}\nBusiness: ${biz || 'N/A'}\nMessage: ${msg || 'I need a website'}`
+  );
+  window.open(`https://wa.me/919626153407?text=${wa}`, '_blank');
+}
+</script>
+</body>
+</html>
